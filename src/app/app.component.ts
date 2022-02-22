@@ -6,11 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  userName: string;
-
-  checkUsername() {
-    return this.userName !== '' ? true : false;
-  }
+  userName: string = '';
 
   onEmptyUsername() {
     this.userName = '';
