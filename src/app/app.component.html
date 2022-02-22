@@ -1,3 +1,10 @@
 <p>app Component</p>
 
 <app-server></app-server>
+
+<form>
+  <input type="text" name="user-name" [(ngModel)]="userName" />
+  <P>Username is : {{ userName }}</P>
+</form>
+
+<button [disabled]="!checkUsername()" (click)="onEmptyUsername()">Clear</button>
