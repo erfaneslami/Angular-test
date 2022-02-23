@@ -1,1 +1,4 @@
-<p>recipe-list works!</p>
+<p *ngFor="let recipe of recipes">{{ recipe.description }}</p>
+
+<img *ngFor="let recipe of recipes" src="{{ recipe.imagePath }}" alt="" />
+<p>hi</p>
