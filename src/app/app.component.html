@@ -8,3 +8,9 @@
 <button [disabled]="userName === ''" (click)="onEmptyUsername()">Clear</button>
 
 <app-server></app-server>
+
+<button (click)="displayPass()">Display Details</button>
+
+<p *ngIf="showPass">secret pass is : tuna</p>
+
+<P *ngFor="let log of logs">{{ log }}</P>

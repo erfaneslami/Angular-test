@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   userName: string = '';
+  showPass = false;
+  logs = [];
 
   onEmptyUsername() {
     this.userName = '';
+  }
+
+  displayPass() {
+    this.showPass = !this.showPass;
+    this.logs.push(new Date());
   }
 }
