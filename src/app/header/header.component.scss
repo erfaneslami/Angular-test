@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 2rem;
+  border-bottom: 1px solid #777;
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  align-items: center;
+  &__items {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 3rem;
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
