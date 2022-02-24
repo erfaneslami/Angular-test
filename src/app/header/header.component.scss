@@ -13,9 +13,10 @@
   align-items: center;
   &__items {
     display: flex;
-    align-items: center;
+    width: 50%;
     font-size: 1.8rem;
     gap: 3rem;
+    justify-content: space-between;
     list-style: none;
 
     li {
@@ -25,4 +26,9 @@
       }
     }
   }
+}
+
+.dropdown {
+  margin-left: auto;
+  // margin-left: 10rem;
 }
