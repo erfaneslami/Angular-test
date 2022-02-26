@@ -1,7 +1,10 @@
 <header class="header">
-  <app-header></app-header>
+  <app-header
+    (recipesClicked)="recipesControl()"
+    (shoppingListClicked)="shoppingListControl()"
+  ></app-header>
 </header>
 <main class="main">
-  <app-recipes></app-recipes>
-  <app-shopping-list></app-shopping-list>
+  <app-recipes *ngIf="recipes"></app-recipes>
+  <app-shopping-list *ngIf="shoppingList"></app-shopping-list>
 </main>
