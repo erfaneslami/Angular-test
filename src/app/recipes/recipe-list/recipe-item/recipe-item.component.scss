@@ -1,0 +1,16 @@
+li {
+  a {
+    display: flex;
+    gap: 2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.recipe-list-image {
+  width: 6rem;
+  height: auto;
+  img {
+    width: 100%;
+  }
+}

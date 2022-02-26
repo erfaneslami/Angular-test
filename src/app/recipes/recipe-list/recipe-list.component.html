@@ -1,15 +1,8 @@
 <button class="btn btn-primary">add Recipe</button>
 
 <ul class="recipe-list">
-  <li *ngFor="let recipe of recipes">
-    <a href="#">
-      <div class="recipe-list-heading">
-        <h3>{{ recipe.name }}</h3>
-        <p>{{ recipe.description }}</p>
-      </div>
-      <div class="recipe-list-image">
-        <img src="{{ recipe.imagePath }}" alt="{{ recipe.name }}" />
-      </div>
-    </a>
-  </li>
+  <app-recipe-item
+    *ngFor="let recipe of recipes"
+    [recipe]="recipe"
+  ></app-recipe-item>
 </ul>
