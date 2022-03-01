@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.open {
-  display: block;
-}
-
 .dd {
   position: relative;
   &__btn {
@@ -41,4 +37,8 @@
       }
     }
   }
+}
+
+.open {
+  display: block;
 }
