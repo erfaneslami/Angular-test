@@ -1,4 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  Input,
+  OnInit,
+  ViewChild,
+  ViewChildren,
+} from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -6,9 +14,24 @@ import { Recipe } from '../recipe.model';
   templateUrl: './recipe-detail.component.html',
   styleUrls: ['./recipe-detail.component.scss'],
 })
-export class RecipeDetailComponent implements OnInit {
+export class RecipeDetailComponent implements OnInit, AfterViewInit {
+  isOpen = false;
   @Input() recipe: Recipe;
-  constructor() {}
+  @ViewChild('dropdownContent') dropdown: ElementRef;
 
-  ngOnInit(): void {}
+  constructor() {
+    console.log(this.dropdown);
+  }
+
+  ngOnInit(): void {
+    console.log(this.dropdown);
+  }
+
+  toggleDropDown() {
+    this.isOpen = !this.isOpen;
+  }
+
+  ngAfterViewInit() {
+    console.log(this.dropdown);
+  }
 }

@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.open {
+  display: block;
+}
+
+.dd {
+  position: relative;
+  &__btn {
+    background-color: rgb(43, 43, 146);
+    color: #eee;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    display: none;
+    border-radius: 5px;
+
+    padding: 1rem;
+    line-height: 1.5rem;
+    // min-width: 160px;
+    border: 1px solid rgb(43, 43, 146);
+    list-style: none;
+    background-color: #eee;
+    color: #333;
+    position: absolute;
+    z-index: 100;
+
+    li {
+      border-bottom: 1px solid #777;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
