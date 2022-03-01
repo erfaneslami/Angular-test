@@ -9,18 +9,6 @@ import { RecipeService } from '../recipe.service';
 })
 export class RecipeListComponent implements OnInit {
   recipes: Recipe[] = [];
-  // recipes: Recipe[] = [
-  //   new Recipe(
-  //     'Burger',
-  //     'this is burger land burger!',
-  //     'https://cdn.pixabay.com/photo/2019/05/24/11/18/burger-4226039_960_720.jpg'
-  //   ),
-  //   new Recipe(
-  //     'pizza',
-  //     'this is burger land pizza!',
-  //     'https://cdn.pixabay.com/photo/2019/05/24/11/18/burger-4226039_960_720.jpg'
-  //   ),
-  // ];
 
   @Output() recipeSelected = new EventEmitter<Recipe>();
 

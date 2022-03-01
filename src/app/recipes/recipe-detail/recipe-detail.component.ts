@@ -7,6 +7,7 @@ import {
   ViewChild,
   ViewChildren,
 } from '@angular/core';
+import { ShoppingListService } from 'src/app/shopping-list/shopping-list.service';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -19,7 +20,7 @@ export class RecipeDetailComponent implements OnInit, AfterViewInit {
   @Input() recipe: Recipe;
   @ViewChild('dropdownContent') dropdown: ElementRef;
 
-  constructor() {
+  constructor(private shoppingListService: ShoppingListService) {
     console.log(this.dropdown);
   }
 
@@ -33,5 +34,9 @@ export class RecipeDetailComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     console.log(this.dropdown);
+  }
+
+  toShoppingList() {
+    this.shoppingListService.addIngredient(this.recipe.ingredient);
   }
 }
