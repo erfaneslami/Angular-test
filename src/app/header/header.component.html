@@ -1,9 +1,11 @@
 <header class="header">
   <h1 class="header__logo">Recipe Book</h1>
   <ul class="header__items">
-    <li><a href="#Recipes" (click)="onRecipesHandler()">Recipes</a></li>
     <li>
-      <a href="#ShoppingList" (click)="onShoppingListHandler()"
+      <a routerLink="/recipes" (click)="onRecipesHandler()">Recipes</a>
+    </li>
+    <li>
+      <a routerLink="/shipping-list" (click)="onShoppingListHandler()"
         >Shopping list</a
       >
     </li>

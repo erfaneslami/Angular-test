@@ -10,6 +10,8 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModules } from './app-routeing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
     RecipeItemComponent,
     RecipeDetailComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, AppRoutingModules],
   providers: [],
   bootstrap: [AppComponent],
 })
