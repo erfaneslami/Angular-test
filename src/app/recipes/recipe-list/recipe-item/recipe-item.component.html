@@ -1,5 +1,5 @@
-<li (click)="onRecipeSelected()">
-  <a>
+<li>
+  <a [routerLink]="[recipe.name]">
     <div class="recipe-list-heading">
       <h3>{{ recipe.name }}</h3>
       <p>{{ recipe.description }}</p>

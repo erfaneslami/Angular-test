@@ -1,10 +1,11 @@
 <section class="recipes">
   <app-recipe-list></app-recipe-list>
-  <app-recipe-detail
+  <!-- <app-recipe-detail
     *ngIf="recipe; else infoText"
     [recipe]="recipe"
   ></app-recipe-detail>
   <ng-template #infoText>
     <p>please select recipe</p>
-  </ng-template>
+  </ng-template> -->
+  <router-outlet></router-outlet>
 </section>
